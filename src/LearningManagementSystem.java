@@ -38,7 +38,7 @@ public class LearningManagementSystem {
 
         // Add a new instructor
         System.out.println("\n🔹 Adding new instructor...");
-        admin.addInstructor("mike_johnson", "mike123", LocalDate.of(1990, 4, 12), "Physics");
+        admin.addInstructor("Mohammed", "Mohammed123", LocalDate.of(1990, 4, 12), "Physics");
 
         // Add a new course
         System.out.println("\n🔹 Adding new course...");

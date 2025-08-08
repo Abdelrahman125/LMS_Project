@@ -64,9 +64,8 @@ abstract class User {
                 '}';
     }
     enum Gender {
-        MALE, FEMALE, OTHER
+        MALE, FEMALE
+
+
     }
-
-
-
 }

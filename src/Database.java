@@ -28,8 +28,8 @@ class Database {
         categories.add(science);
 
         // Create admins
-        Admin admin1 = new Admin("admin", "admin123", LocalDate.of(1980, 5, 15), "System Administrator", 40);
-        Admin admin2 = new Admin("superadmin", "super123", LocalDate.of(1975, 8, 20), "Super Administrator", 45);
+        Admin admin1 = new Admin("CEO", "CEO123", LocalDate.of(1980, 5, 15), "System Administrator", 40);
+        Admin admin2 = new Admin("COO", "COO123", LocalDate.of(1975, 8, 20), "Super Administrator", 45);
         admins.add(admin1);
         admins.add(admin2);
         users.add(admin1);
@@ -45,11 +45,11 @@ class Database {
 
         // Create students
         Student student1 = new Student("Rana", "Rana123", LocalDate.of(2000, 1, 15),
-                "Rehab", User.Gender.FEMALE, 1000.0);
+                "Rehab", User.Gender.FEMALE, 18000.0);
         Student student2 = new Student("Abdelrahman", "Bedo123", LocalDate.of(1999, 12, 5),
-                "madindy", User.Gender.MALE, 1500.0);
+                "madindy", User.Gender.MALE, 15000.0);
         Student student3 = new Student("Mahmoud", "Mahmoud123", LocalDate.of(2001, 6, 18),
-                "Mivida", User.Gender.MALE, 800.0);
+                "Mivida", User.Gender.MALE, 17000.0);
         students.add(student1);
         students.add(student2);
         students.add(student3);
@@ -59,11 +59,11 @@ class Database {
 
         // Create courses
         Course course1 = new Course("Java Programming", "Learn Java from basics to advanced",
-                299.99, instructor1.getUserId(), programming);
+                2700, instructor1.getUserId(), programming);
         Course course2 = new Course("Data Structures", "Master algorithms and data structures",
-                399.99, instructor1.getUserId(), programming);
+                2500, instructor1.getUserId(), programming);
         Course course3 = new Course("Calculus I", "Introduction to differential calculus",
-                249.99, instructor2.getUserId(), mathematics);
+                2650, instructor2.getUserId(), mathematics);
         courses.add(course1);
         courses.add(course2);
         courses.add(course3);
