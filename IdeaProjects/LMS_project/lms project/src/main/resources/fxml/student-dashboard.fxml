@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StudentController">
+    <top>
+        <VBox style="-fx-background-color: #2c3e50;">
+            <children>
+                <HBox alignment="CENTER_LEFT" spacing="20.0">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                    <children>
+                        <Label fx:id="welcomeLabel" text="Welcome, Student" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Label fx:id="balanceLabel" text="Balance: $0.00" textFill="WHITE" />
+                        <Label fx:id="enrolledCoursesLabel" text="Enrolled Courses: 0" textFill="WHITE" />
+                        <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </top>
+
+    <center>
+        <HBox>
+            <children>
+                <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="10.0" top="20.0" />
+                    </padding>
+                    <children>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                            <children>
+                                <Label text="Available Courses">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </Label>
+                                <Region HBox.hgrow="ALWAYS" />
+                                <Button fx:id="enrollButton" mnemonicParsing="false" onAction="#handleEnroll" text="Enroll in Course" />
+                            </children>
+                        </HBox>
+                        <TableView fx:id="availableCoursesTable" prefHeight="200.0" />
+
+                        <Label text="My Courses">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <TableView fx:id="myCoursesTable" prefHeight="200.0" />
+
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                            <children>
+                                <Label text="Assignments">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </Label>
+                                <Region HBox.hgrow="ALWAYS" />
+                                <Button fx:id="submitAssignmentButton" mnemonicParsing="false" onAction="#handleSubmitAssignment" text="Submit Assignment" />
+                            </children>
+                        </HBox>
+                        <TableView fx:id="assignmentsTable" prefHeight="200.0" />
+                    </children>
+                </VBox>
+
+                <VBox prefWidth="300.0" spacing="10.0" style="-fx-background-color: #ecf0f1;">
+                    <padding>
+                        <Insets bottom="20.0" left="15.0" right="20.0" top="20.0" />
+                    </padding>
+                    <children>
+                        <Label text="Profile Information">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <TextArea fx:id="profileArea" editable="false" prefHeight="400.0" wrapText="true" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

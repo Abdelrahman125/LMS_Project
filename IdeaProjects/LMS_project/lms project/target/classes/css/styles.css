@@ -1,0 +1,28 @@
+ .root {
+    -fx-background-color: #f8f9fa;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+ }
+ .button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-padding: 10px 20px;
+ }
+ .button:hover {
+    -fx-background-color: #0056b3;
+ }
+ .table-view {
+    -fx-background-color: white;
+    -fx-border-color: #dee2e6;
+ }
+ .text-field, .password-field {
+    -fx-background-color: white;
+    -fx-border-color: #ced4da;
+    -fx-border-radius: 4px;
+    -fx-padding: 8px 12px;
+ }
+ .label {
+    -fx-text-fill: #495057;
+ }
